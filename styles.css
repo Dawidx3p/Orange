@@ -1,0 +1,303 @@
+/* Site Stylesheet
+  1. Global Styles
+  2. Color Styles
+  3. Fonts
+  4. Text styles
+  5. Section styles
+
+======================================== */
+
+/* 1. Global Styles
+======================================== */
+html{
+    font-size: 16px;
+}
+
+nav{
+    display: flex;
+    background-color: #090909;
+    flex-wrap: wrap;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding-bottom: 20px;
+    top:0px;
+    z-index: 10;
+}
+
+ul{
+    display: inline-block;
+}
+
+li{
+    display: inline-block;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 139px;
+}
+
+section{
+    padding: 5%;
+    flex-basis: 40%;
+    background-color: #333;
+}
+
+button{
+    padding: 15px;
+    margin-bottom: 15px;
+    color: #FA7600;
+    background-color: #090909;
+    border: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: white;
+}
+
+footer{
+    width: 94%;
+    background-color: #333;
+    padding: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+footer li{
+    padding: 2px;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.4em;
+}
+footer a{color: white;}
+footer h3{
+    margin-bottom: 10px;
+}
+footer section{
+    padding: 15px;
+}
+/* 2. Color Styles
+======================================== */
+.Color-Theme-1 { color: #7A3900; }
+.Color-Theme-2 { color: #FB9D4B; }
+.main-color { color: #FA7600; }
+.dark-color { color: #452B15; }
+.Color-Theme-5 { color: #C75D00; }
+a{
+    color: #090909;
+    text-decoration: none;
+}
+
+.nav2 a:hover{color:#FA7600;}
+.main-nav a:hover{color:#FA7600;}
+
+.up-nav .active{background-color: #090909;}
+.up-nav li:hover{background-color: #090909;}
+nav a{color: white;}
+section h1{color: #FA7600;}
+section{color: white;}
+
+
+/* 3. Fonts
+======================================== */
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    max-width: 400px;
+  
+  }
+  
+  p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    max-width: 500px;
+    line-height: 1.4em;
+  }
+  
+  h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  
+  h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+
+/* 3. Text Styles
+======================================== */
+
+h1{
+    line-height: 40px;
+}
+
+h2{
+    line-height: 35px;
+}
+
+h3{
+    line-height: 25px;
+}
+
+/* 5. Section styles
+======================================== */
+
+.up-nav{
+    flex-basis: 100%;
+    background-color: #333;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.up-nav a{
+ color: white;
+ justify-content: left;
+}
+
+nav img{margin-left: 40px;}
+
+.nav2{
+    justify-self: flex-end;
+    justify-items: flex-end;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.oferta1{
+    background-image: url('https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80');
+    background-size: cover;
+}
+
+.oferta2{
+    background-image: url('https://www.orange.pl/medias/sys_master/root/images/h5c/h41/10405144002590/sg-R.jpg');
+    background-size: cover;
+}
+
+.oferta2{
+    color: black
+}
+
+section h2{
+    margin-bottom: 40%;
+}
+
+.grid{
+    flex-basis: 100%;
+    padding: 0;
+    display: grid;
+    grid-template: 450px 450px/ 1fr 1fr 1fr 1fr;
+}
+.grid div{
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content{
+    opacity: 0%;
+    padding: 10%;
+    transition: opacity 0.3s;
+    align-content:flex-start;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.content:hover{opacity: 100%;}
+.content h3{
+    color:#FA7600;
+    margin: auto;
+    max-width: 80%; 
+    text-align: center;
+}
+.content button{
+    margin-top: 20px;
+}
+.content p{
+    margin-top: 20px;
+}
+
+.item1{
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url('https://images.unsplash.com/photo-1581993192008-63e896f4f744?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1494&q=80');
+}
+.item2{
+    grid-area: 1 / 2 / 2 / 3;
+    background-image: url('https://images.unsplash.com/photo-1569689725958-af8bb9f5486e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1338&q=80');
+}
+.item3{
+    grid-area: 1 / 3 / 2 / 4;
+    background-image: url('https://images.unsplash.com/photo-1557774058-c9148bc6e481?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1320&q=80');
+}
+.item4{
+    grid-area: 1 / 4 / 2 / 5;
+    background-image: url('https://images.unsplash.com/photo-1611407019488-0a354195b618?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
+}
+.item5{
+    grid-area: 2 / 1 / 3 / 2;
+    background-image: url('https://images.unsplash.com/photo-1610945264803-c22b62d2a7b3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80');
+}
+.item6{
+    grid-area: 2 / 2 / 3 / 3;
+    background-image: url('https://images.unsplash.com/photo-1592813491527-b34ff452c600?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=805&q=80');
+}
+.item7{
+    grid-area: 2 / 3 / 3 / 4;
+    background-image: url('https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+}
+.item8{
+    grid-area: 2 / 4 / 3 / 5;
+    background-image: url('https://images.unsplash.com/photo-1590459963567-1bf6b8595be1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80');
+}
+
+@media only screen and (max-width: 740px) {
+    nav{
+        padding-top: 20px;
+    }   
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5%;
+        flex-basis: 90%;
+        background-color: #333;
+    }
+    ul{
+        display: none;
+    }
+    main{
+        margin-top: 105px;
+    }
+    section h2{
+        margin-bottom: 40%;
+    }
+    button{
+        margin: 15px auto;
+        justify-self: center;
+        flex-basis: 100%;
+    }
+    .grid{
+        display: flex;
+    }
+    .grid div{
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    html{
+        font-size: 12px;
+    }
+    li{
+        margin-left: 6px;
+    }
+}
